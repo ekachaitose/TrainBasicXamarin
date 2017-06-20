@@ -28,3 +28,8 @@ E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\obj\De
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\obj\Debug\XamarinFirst.NavPage3.xaml.g.cs
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\obj\Debug\XamarinFirst.HomePage.xaml.g.cs
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\obj\Debug\XamarinFirst.MenuPage.xaml.g.cs
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\bin\Debug\Plugin.Settings.Abstractions.dll
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\bin\Debug\Plugin.Settings.dll
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\bin\Debug\Plugin.Settings.xml
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\bin\Debug\Plugin.Settings.Abstractions.xml
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\obj\Debug\XamarinFirst.PreferencePage.xaml.g.cs

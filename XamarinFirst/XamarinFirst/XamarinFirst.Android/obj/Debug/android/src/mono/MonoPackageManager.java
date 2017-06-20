@@ -100,6 +100,8 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "XamarinFirst.Android.dll" comes first in this list. */
 		"XamarinFirst.Android.dll",
 		"FormsViewGroup.dll",
+		"Plugin.Settings.Abstractions.dll",
+		"Plugin.Settings.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",

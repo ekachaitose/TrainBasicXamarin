@@ -20,6 +20,7 @@ namespace XamarinFirst
             tabButton.Clicked += MenuButton_Clicked;
             carouselButton.Clicked += MenuButton_Clicked;
             contentButton.Clicked += MenuButton_Clicked;
+            preferenceButton.Clicked += MenuButton_Clicked;
         }
 
         private void MenuButton_Clicked(object sender, EventArgs e)
@@ -63,6 +64,11 @@ namespace XamarinFirst
             else if (sender == contentButton)
             {
                 var np = new NavigationPage(new Page1());
+                mp.Detail = np;
+            }
+            else if (sender == preferenceButton)
+            {
+                var np = new NavigationPage(new PreferencePage());
                 mp.Detail = np;
             }
             mp.IsPresented = false;
