@@ -19,6 +19,9 @@ namespace XamarinFirst
 
             nameEntry.Text = Helpers.Settings.Name;
             ageEntry.Text = Helpers.Settings.Age.ToString();
+            object path;
+            Application.Current.Properties.TryGetValue("Path", out path);
+            pathEditor.Text = path == null ? "" : path.ToString() ;
         }
 
         private void SaveButton_Clicked(object sender, EventArgs e)

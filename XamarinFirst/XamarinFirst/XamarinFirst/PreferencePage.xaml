@@ -20,5 +20,12 @@
             Text="Save"
             BackgroundColor="Silver"/>
 
+        <Label
+            Text="Path"/>
+        <Editor
+            x:Name="pathEditor"
+            VerticalOptions="FillAndExpand"
+            BackgroundColor="Yellow"/>
+
     </StackLayout>
 </ContentPage>

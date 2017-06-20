@@ -29,7 +29,11 @@ namespace XamarinFirst
             mp.Detail = new NavigationPage(new HomePage());
             MainPage = mp;
         }
-
+        public App(string path) : this()
+        {
+            Application.Current.Properties["Path"] = path;
+          
+        }
         protected override void OnStart()
         {
             // Handle when your app starts
