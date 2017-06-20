@@ -16,6 +16,12 @@ namespace XamarinFirst
         {
             InitializeComponent();
             nextButton.Clicked += NextButton_Clicked;
+            uploadButton.Clicked += UploadButton_Clicked;
+        }
+
+        private void UploadButton_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("title", "Bello Upload", "OK");
         }
 
         private void NextButton_Clicked(object sender, EventArgs e)

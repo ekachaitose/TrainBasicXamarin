@@ -24,7 +24,10 @@ namespace XamarinFirst
             cp.Children.Add(new TabPage3());
 
             var np = new NavigationPage(new NavPage1());
-            MainPage = np;
+            var mp = new MasterDetailPage();
+            mp.Master = new MenuPage();
+            mp.Detail = new NavigationPage(new HomePage());
+            MainPage = mp;
         }
 
         protected override void OnStart()

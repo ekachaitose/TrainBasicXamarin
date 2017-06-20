@@ -9,7 +9,7 @@
         Padding="50">
 
         <Label
-            Text="Page1"
+            Text="Page3"
             HorizontalTextAlignment="Center"
             FontSize="30"/>
 

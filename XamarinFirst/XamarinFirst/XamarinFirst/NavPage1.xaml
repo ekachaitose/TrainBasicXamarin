@@ -4,6 +4,12 @@
              x:Class="XamarinFirst.NavPage1"
              Title="Page 1"
              BackgroundColor="Red">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            x:Name="uploadButton"
+            Text="Upload"
+            Icon="upload.png"/>
+    </ContentPage.ToolbarItems>
     <StackLayout
         Orientation="Vertical"
         VerticalOptions="Center"
