@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFirst.ViewPage"
+             Padding="10,20,10,10">
+    <ScrollView>
+        <StackLayout
+        Orientation="Vertical"
+        BackgroundColor="Lime">
+
+            <Label
+            Text="Hello World"
+            BackgroundColor="Yellow"
+            TextColor="Black"
+            HorizontalTextAlignment="Center"
+            HorizontalOptions="Fill"
+            WidthRequest="200"
+            VerticalTextAlignment="Center"
+            VerticalOptions="Start"/>
+
+            <Entry 
+            x:Name="myEntry"
+            Placeholder="Input text here"
+            PlaceholderColor="Gray"
+            BackgroundColor="White"
+            Keyboard="Text"
+            IsPassword="True"
+            />
+
+            <Button
+            x:Name="okButton"
+            Text="OK"
+            BackgroundColor="Silver"
+            />
+            <Editor
+            HeightRequest="50"
+            BackgroundColor="Olive"/>
+
+            <DatePicker/>
+            <TimePicker/>
+
+            <Picker
+            x:Name="genderPicker"
+            Title="--กรุณาเลือกเพศ--"
+           />
+            <BoxView
+            BackgroundColor="Red"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            WidthRequest="50"/>
+
+            <Frame Margin="20" BackgroundColor="White">
+                <Label
+                Text="Welcome to Xamarin.Forms"
+                HorizontalTextAlignment="Center"
+                TextColor="Black"/>
+            </Frame>
+
+            <Image
+            Source="bbutton.png"/>
+           
+            <Button
+            Image="bbutton.png"/>
+            
+            <ProgressBar
+                Progress="0.5"/>
+
+            <Slider
+                Maximum="100"
+                Minimum="0"
+                Value="50"/>
+
+            <Stepper
+                Maximum="10"
+                Minimum="0"
+                Increment="1"
+                Value="5"/>
+            <Switch
+                IsToggled="True"/>
+
+            <SearchBar/>
+
+            <ActivityIndicator
+                IsRunning="True"/>
+
+            <WebView
+                Source="https://google.co.th"
+                HeightRequest="500"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFirst.StackPage"
+             Padding="20">
+    <StackLayout
+        Orientation="Vertical"
+        BackgroundColor="Yellow">
+
+        <Button
+            Text="Button"
+            BackgroundColor="Red"/>
+
+        <Button
+            Text="Button"
+            BackgroundColor="Green"/>
+
+        <Button
+            Text="Button"
+            BackgroundColor="Blue"/>
+        <ScrollView
+            Orientation="Horizontal">
+            <StackLayout
+            Orientation="Horizontal"
+            BackgroundColor="Aqua">
+
+                <Button
+            Text="Button"
+            BackgroundColor="Red"/>
+
+                <Button
+            Text="Button"
+            BackgroundColor="Green"/>
+
+                <Button
+            Text="Button"
+            BackgroundColor="Blue"/>
+
+                <Button
+            Text="Button"
+            BackgroundColor="Red"/>
+
+                <Button
+            Text="Button"
+            BackgroundColor="Green"/>
+
+                <Button
+            Text="Button"
+            BackgroundColor="Blue"/>
+                <Button
+            Text="Button"
+            BackgroundColor="Red"/>
+
+                <Button
+            Text="Button"
+            BackgroundColor="Green"/>
+
+                <Button
+            Text="Button"
+            BackgroundColor="Blue"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
