@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFirst.CustomerRegisterPage"
+             Padding="20"
+             Title="Customer Register">
+    <ScrollView>
+        <Frame
+            Margin="20"
+            BackgroundColor="Aqua">
+            <StackLayout
+                Orientation="Vertical">
+                <Button
+                    Text="Take a Picture"
+                    HorizontalOptions="Center"
+                    WidthRequest="120"
+                    HeightRequest="120"
+                    BackgroundColor="Silver" />
+                <Entry
+                    x:Name="nameEntry"
+                    Placeholder="Name" />
+                <Entry
+                    x:Name="surnameEntry"
+                    Placeholder="Surname" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout
+                        Orientation="Vertical">
+                        <Label
+                            Text="Birthdate" />
+                        <DatePicker
+                            x:Name="birthdatePicker"/>
+                    </StackLayout>
+                    <StackLayout
+                        Orientation="Vertical"
+                        Grid.Column="1">
+                        <Label
+                            Text="Gender" />
+                        <Picker
+                            x:Name="genderPicker"
+                            Title="-- Choose --" />
+                    </StackLayout>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout
+                        Orientation="Vertical">
+                        <Label
+                            Text="Marry?" />
+                        <Switch
+                            x:Name="marrySwitch"/>
+                    </StackLayout>
+                    <StackLayout
+                        Orientation="Vertical"
+                        Grid.Column="1">
+                        <Label
+                            x:Name="childrenLabel"
+                            Text="Children: 0" />
+                        <Stepper 
+                            x:Name="childrenStepper"
+                            Maximum="10"
+                            Minimum="0"
+                            Increment="1"/>
+                    </StackLayout>
+                </Grid>
+                <Label
+                    x:Name="salaryLabel"
+                    Text="Salary: 0 Baht" />
+                <Slider
+                    x:Name="salarySlider"
+                    Maximum="100000"
+                    Minimum="0"/>
+                <Entry
+                    x:Name="usernameEntry"
+                    Placeholder="Username" />
+                <Entry
+                    x:Name="passwordEntry"
+                    Placeholder="Password"
+                    IsPassword="true" />
+                <Entry
+                    x:Name="emailEntry"
+                    Placeholder="Email"
+                    Keyboard="Email" />
+                <Entry
+                    x:Name="telephoneEntry"
+                    Placeholder="Telephone"
+                    Keyboard="Telephone" />
+                <Entry
+                    x:Name="websiteEntry"
+                    Placeholder="Website"
+                    Keyboard="Url" />
+                <Label
+                    Text="Address" />
+                <Editor
+                    x:Name="addressEditor"
+                    HeightRequest="80" />
+                <StackLayout
+                    Orientation="Horizontal">
+                    <Button
+                        x:Name="cancelButton"
+                        Text="Cancel"
+                        TextColor="White"
+                        BackgroundColor="Red"
+                        HorizontalOptions="FillAndExpand"/>
+                    <Button
+                        x:Name="saveButton"
+                        Text="Save"
+                        TextColor="White"
+                        BackgroundColor="Green"
+                        HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </ScrollView>
+</ContentPage>
