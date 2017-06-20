@@ -46,6 +46,12 @@
             Text="Preference Setting"
             TextColor="White"
             BackgroundColor="Green"/>
+
+        <Button
+            x:Name="customerregisterButton"
+            Text="Register Customer"
+            TextColor="White"
+            BackgroundColor="Green"/>
     </StackLayout>
                 
 </ContentPage>

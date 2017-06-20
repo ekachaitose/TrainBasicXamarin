@@ -21,7 +21,9 @@ namespace XamarinFirst
             carouselButton.Clicked += MenuButton_Clicked;
             contentButton.Clicked += MenuButton_Clicked;
             preferenceButton.Clicked += MenuButton_Clicked;
+            customerregisterButton.Clicked += MenuButton_Clicked;
         }
+
 
         private void MenuButton_Clicked(object sender, EventArgs e)
         {
@@ -69,6 +71,12 @@ namespace XamarinFirst
             else if (sender == preferenceButton)
             {
                 var np = new NavigationPage(new PreferencePage());
+                mp.Detail = np;
+            }
+
+            else if (sender == customerregisterButton)
+            {
+                var np = new NavigationPage(new CustomerRegisterPage());
                 mp.Detail = np;
             }
             mp.IsPresented = false;
