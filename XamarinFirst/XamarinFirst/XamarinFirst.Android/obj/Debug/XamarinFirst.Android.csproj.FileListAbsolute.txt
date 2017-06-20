@@ -52,3 +52,9 @@ E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Androi
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\res\drawable\airdrop.png
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\res\drawable\alarms.png
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\res\drawable\albums.png
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\res\drawable\chat.png
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\res\drawable\contacts.png
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\res\drawable\divide.png
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\res\drawable\upload.png
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\res\drawable\layers_2.png
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\res\drawable\header.png

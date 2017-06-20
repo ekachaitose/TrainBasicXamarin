@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFirst.MenuPage"
+             Title="Menu"
+             Icon="layer_2.png"
+             BackgroundColor="Silver"
+             Padding="10,20,10,10">
+    <StackLayout
+        Orientation="Vertical">
+        <Image 
+            Source="header.png"/>
+        
+        <Button
+            x:Name="homeButton"
+            Text="HOME"
+            TextColor="White"
+            BackgroundColor="Green"/>
+        
+        <Button
+            x:Name="navButton"
+            Text="Navigation Page"
+            TextColor="White"
+            BackgroundColor="Green"/>
+
+        <Button
+            x:Name="tabButton"
+            Text="Tabbed Page"
+            TextColor="White"
+            BackgroundColor="Green"/>
+
+        <Button
+            x:Name="carouselButton"
+            Text="Carousel Page"
+            TextColor="White"
+            BackgroundColor="Green"/>
+
+        <Button
+            x:Name="contentButton"
+            Text="Content Page"
+            TextColor="White"
+            BackgroundColor="Green"/>
+    </StackLayout>
+                
+</ContentPage>

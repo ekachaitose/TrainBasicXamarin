@@ -26,3 +26,5 @@ E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\obj\De
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\obj\Debug\XamarinFirst.NavPage1.xaml.g.cs
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\obj\Debug\XamarinFirst.NavPage2.xaml.g.cs
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\obj\Debug\XamarinFirst.NavPage3.xaml.g.cs
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\obj\Debug\XamarinFirst.HomePage.xaml.g.cs
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst\obj\Debug\XamarinFirst.MenuPage.xaml.g.cs
