@@ -40,6 +40,12 @@
             Text="Content Page"
             TextColor="White"
             BackgroundColor="Green"/>
+
+        <Button
+            x:Name="preferenceButton"
+            Text="Preference Setting"
+            TextColor="White"
+            BackgroundColor="Green"/>
     </StackLayout>
                 
 </ContentPage>

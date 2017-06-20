@@ -23,7 +23,8 @@ namespace XamarinFirst.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            var path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            LoadApplication(new App(path));
 
             return base.FinishedLaunching(app, options);
         }

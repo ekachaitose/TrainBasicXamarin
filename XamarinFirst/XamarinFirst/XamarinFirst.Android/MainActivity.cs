@@ -20,7 +20,8 @@ namespace XamarinFirst.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new App());
+            var path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            LoadApplication(new App(path));
         }
     }
 }

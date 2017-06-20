@@ -58,3 +58,7 @@ E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Androi
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\res\drawable\upload.png
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\res\drawable\layers_2.png
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\res\drawable\header.png
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\bin\Debug\Plugin.Settings.Abstractions.dll
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\bin\Debug\Plugin.Settings.dll
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\bin\Debug\Plugin.Settings.xml
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\bin\Debug\Plugin.Settings.Abstractions.xml
