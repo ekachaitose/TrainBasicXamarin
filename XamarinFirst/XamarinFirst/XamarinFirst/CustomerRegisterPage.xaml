@@ -5,85 +5,117 @@
              Padding="20"
              Title="Customer Register">
     <ScrollView>
-        <StackLayout
-        Orientation="Vertical"
-        BackgroundColor="Black">
-            <Label
-                Text="Name"/>
-            <Entry
-                x:Name="entryName"
-                Placeholder="Name"/>
-            <Label
-                Text="SurName"/>
-            <Entry
-                x:Name="entrySurname"
-                Placeholder="Surname"/>
-            <Label
-                Text="Birthdate"/>
-            <DatePicker
-                x:Name="datepickerBirthdate"/>
-            <Label
-                Text="Email"/>
-            <Entry
-                x:Name="entryEmail"
-                Placeholder="Email"/>
-            <Label
-                Text="Telephone"/>
-            <Entry
-                x:Name="entryTelephone"
-                Keyboard="Telephone"
-                Placeholder="Telephone"/>
-            <Label
-                Text="IsMarry"/>
-            <Switch
-                x:Name="switchIsmarry"
-                IsToggled="False"/>
-            <Label
-                Text="Salary"/>
-            <Slider
-                x:Name="sliderSalary"
-                Minimum="15000"
-                Maximum="30000"
-                Value="5000"/>
-            <Label
-                Text="Children"/>
-            <Stepper
-                x:Name="stepperChildren"
-                Maximum="10"
-                Minimum="0"
-                Value="5"
-                Increment="1"/>
-            <Label
-                Text="Gender"/>
-            <Picker
-                x:Name="pickerGender"
-                Title="--- please select Gender ---"/>
-            <Entry
-                x:Name="entryPhoto"/>
-            <Label
-                Text="Address"/>
-            <Editor
-                x:Name="editorAddress"/>
-            <Label
-                Text="Website"/>
-            <Entry
-                x:Name="entryWebsite"
-                Placeholder="Website"/>
-            <Label
-                Text="Username"/>
-            <Entry
-                x:Name="entryUsername"
-                Placeholder="Username"/>
-            <Label
-                Text="Password"/>
-            <Entry
-                x:Name="entryPassword"
-                Placeholder="Password"/>
-            <Button
-                x:Name="buttonSubmit"
-                Text="Submit"/>
-
-
-        </StackLayout>
+        <Frame
+            Margin="20"
+            BackgroundColor="Aqua">
+            <StackLayout
+                Orientation="Vertical">
+                <Button
+                    Text="Take a Picture"
+                    HorizontalOptions="Center"
+                    WidthRequest="120"
+                    HeightRequest="120"
+                    BackgroundColor="Silver" />
+                <Entry
+                    x:Name="nameEntry"
+                    Placeholder="Name" />
+                <Entry
+                    x:Name="surnameEntry"
+                    Placeholder="Surname" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout
+                        Orientation="Vertical">
+                        <Label
+                            Text="Birthdate" />
+                        <DatePicker
+                            x:Name="birthdatePicker"/>
+                    </StackLayout>
+                    <StackLayout
+                        Orientation="Vertical"
+                        Grid.Column="1">
+                        <Label
+                            Text="Gender" />
+                        <Picker
+                            x:Name="genderPicker"
+                            Title="-- Choose --" />
+                    </StackLayout>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout
+                        Orientation="Vertical">
+                        <Label
+                            Text="Marry?" />
+                        <Switch
+                            x:Name="marrySwitch"/>
+                    </StackLayout>
+                    <StackLayout
+                        Orientation="Vertical"
+                        Grid.Column="1">
+                        <Label
+                            x:Name="childrenLabel"
+                            Text="Children: 0" />
+                        <Stepper 
+                            x:Name="childrenStepper"
+                            Maximum="10"
+                            Minimum="0"
+                            Increment="1"/>
+                    </StackLayout>
+                </Grid>
+                <Label
+                    x:Name="salaryLabel"
+                    Text="Salary: 0 Baht" />
+                <Slider
+                    x:Name="salarySlider"
+                    Maximum="100000"
+                    Minimum="0"/>
+                <Entry
+                    x:Name="usernameEntry"
+                    Placeholder="Username" />
+                <Entry
+                    x:Name="passwordEntry"
+                    Placeholder="Password"
+                    IsPassword="true" />
+                <Entry
+                    x:Name="emailEntry"
+                    Placeholder="Email"
+                    Keyboard="Email" />
+                <Entry
+                    x:Name="telephoneEntry"
+                    Placeholder="Telephone"
+                    Keyboard="Telephone" />
+                <Entry
+                    x:Name="websiteEntry"
+                    Placeholder="Website"
+                    Keyboard="Url" />
+                <Label
+                    Text="Address" />
+                <Editor
+                    x:Name="addressEditor"
+                    HeightRequest="80" />
+                <StackLayout
+                    Orientation="Horizontal">
+                    <Button
+                        x:Name="cancelButton"
+                        Text="Cancel"
+                        TextColor="White"
+                        BackgroundColor="Red"
+                        HorizontalOptions="FillAndExpand"/>
+                    <Button
+                        x:Name="saveButton"
+                        Text="Save"
+                        TextColor="White"
+                        BackgroundColor="Green"
+                        HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
     </ScrollView>
 </ContentPage>
