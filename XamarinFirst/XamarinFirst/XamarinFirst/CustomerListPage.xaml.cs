@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinFirst.Models;
 
 namespace XamarinFirst
 {
@@ -19,6 +20,7 @@ namespace XamarinFirst
             searchEntry.TextChanged += SearchEntry_TextChanged;
             listView.Refreshing += ListView_Refreshing;
             FeedData();
+           
         }
 
         private  void ListView_Refreshing(object sender, EventArgs e)
@@ -40,12 +42,32 @@ namespace XamarinFirst
             listView.ItemsSource = Helpers.DbHelper.Current.CustomerSearch(searchEntry.Text);
         }
 
-
         private void AddButton_Clicked(object sender, EventArgs e)
         {
             var np = this.Parent as NavigationPage;
             var mp = np.Parent as MasterDetailPage;
             mp.Detail = new NavigationPage(new CustomerRegisterPage());
+        }
+
+        private async void DeleteButton_Clicked(object sender, EventArgs e)
+        {
+            var isOk = await DisplayAlert("Confirm ? ", "Do you want to delete?", "OK", "Cancel");
+            if (isOk)
+            {
+                var button = sender as MenuItem;
+                var customer = button.CommandParameter as Customer;
+
+                isOk = await Helpers.DbHelper.Current.CustomerDelete(customer);
+                if (isOk)
+                {
+                    await DisplayAlert("Completed", "Delete Success", "OK");
+                    FeedData();
+                }
+                else await DisplayAlert("Fail", "Something wrong", "OK");
+                
+
+            }
+
         }
     }
 }

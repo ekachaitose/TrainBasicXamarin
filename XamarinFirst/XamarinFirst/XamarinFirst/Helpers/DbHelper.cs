@@ -68,9 +68,13 @@ namespace XamarinFirst.Helpers
         {
             return db.Update(customer);
         }
-        public int CustomerDelete(Customer customer)
+        public async Task<bool> CustomerDelete(Customer customer)
         {
-            return db.Delete(customer);
+            
+            var client = new HttpClient();
+            var response = await client.DeleteAsync($"http://codemobile.azurewebsites.net/api/Customers?id={customer.Id}");
+            return response.StatusCode == System.Net.HttpStatusCode.OK;
+            
         }
 
         public List<Customer> CustomerGet()

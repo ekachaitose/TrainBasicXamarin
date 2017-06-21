@@ -68,3 +68,4 @@ E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Androi
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\bin\Debug\Newtonsoft.Json.dll
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\bin\Debug\XamarinFirst.dll.config
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\bin\Debug\Newtonsoft.Json.xml
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\res\drawable\trash.png

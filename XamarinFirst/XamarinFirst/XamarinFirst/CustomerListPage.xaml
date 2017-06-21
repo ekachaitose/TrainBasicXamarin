@@ -26,6 +26,16 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
+                        <ViewCell.ContextActions>
+                           
+                            <MenuItem 
+                                Text="Delete"
+                                IsDestructive="True"
+                                x:Name="delButton"
+                                CommandParameter="{Binding .}"
+                                Clicked="DeleteButton_Clicked"/>
+                            
+                        </ViewCell.ContextActions>
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="100">

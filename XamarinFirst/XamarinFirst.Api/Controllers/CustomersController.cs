@@ -19,9 +19,18 @@ namespace XamarinFirst.Api.Controllers
         }
 
         [HttpGet]
-        public List<Customer> Get()
+        public string Get()
         {
-            return db.Customers.ToList();
+            string x = "success";
+            try
+            {
+                db.Customers.ToList();
+            }
+            catch (Exception ex)
+            {
+                x = ex.Message;
+            }
+            return x;
         }
 
         [HttpPost]
@@ -48,6 +57,7 @@ namespace XamarinFirst.Api.Controllers
                              .Where(c => c.Id == id)
                              .Single();
             db.Remove(customer);
+            db.SaveChanges();
             return true;
         }
     }
