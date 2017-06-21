@@ -58,11 +58,14 @@ namespace XamarinFirst
                 Password = passwordEntry.Text
 
             };
-
-            var affected = Helpers.DbHelper.Current.CustomerAdd(customer);
-            if (affected > 0)
+            saveButton.IsEnabled = false;
+            saveIndicator.IsVisible = true;
+            var id = await Helpers.DbHelper.Current.CustomerAdd(customer);
+            saveButton.IsEnabled = true;
+            saveIndicator.IsVisible = false;
+            if (id > 0)
             {
-               await DisplayAlert("Complete", "Register Success", "OK");
+               await DisplayAlert("Complete", $"Register Success #{id}", "OK");
                 var np = this.Parent as NavigationPage;
                 var mp = np.Parent as MasterDetailPage;
                 mp.Detail = new NavigationPage(new CustomerListPage());

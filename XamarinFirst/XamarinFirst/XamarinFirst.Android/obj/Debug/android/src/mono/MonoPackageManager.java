@@ -100,6 +100,7 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "XamarinFirst.Android.dll" comes first in this list. */
 		"XamarinFirst.Android.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"Plugin.Settings.Abstractions.dll",
 		"Plugin.Settings.dll",
 		"SQLite.Net.dll",

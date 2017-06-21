@@ -37,6 +37,7 @@ namespace XamarinFirst
         protected override void OnStart()
         {
             // Handle when your app starts
+            Helpers.DbHelper.Current.FeedData();
         }
 
         protected override void OnSleep()

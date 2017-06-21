@@ -108,12 +108,18 @@
                         TextColor="White"
                         BackgroundColor="Red"
                         HorizontalOptions="FillAndExpand"/>
-                    <Button
+                    <Grid
+                        HorizontalOptions="FillAndExpand">
+                        <Button
                         x:Name="saveButton"
                         Text="Save"
                         TextColor="White"
-                        BackgroundColor="Green"
-                        HorizontalOptions="FillAndExpand"/>
+                        BackgroundColor="Green" />
+                        <ActivityIndicator
+                            x:Name="saveIndicator"
+                            IsRunning="True"
+                            IsVisible="False"/>
+                    </Grid>
                 </StackLayout>
             </StackLayout>
         </Frame>

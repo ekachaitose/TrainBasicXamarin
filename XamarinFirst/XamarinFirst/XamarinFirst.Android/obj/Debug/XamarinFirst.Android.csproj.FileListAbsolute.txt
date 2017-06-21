@@ -64,3 +64,7 @@ E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Androi
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\android\assets\XamarinFirst.dll.mdb
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\bin\Debug\XamarinFirst.Android.dll.config
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\bin\Debug\Newtonsoft.Json.dll
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\bin\Debug\XamarinFirst.dll.config
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\bin\Debug\Newtonsoft.Json.xml

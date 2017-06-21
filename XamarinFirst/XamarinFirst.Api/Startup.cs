@@ -31,6 +31,11 @@ namespace XamarinFirst.Api
         {
             // Add framework services.
             services.AddMvc();
+
+            //return JSON format PascalCase
+            services.AddMvc().AddJsonOptions(options => {
+                options.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver();
+            });
             services.AddDbContext<MyDbContext>(options => {
                 var myConnection = Configuration.GetConnectionString("MyConnection");
                 options.UseSqlServer(myConnection);
