@@ -52,6 +52,12 @@
             Text="Register Customer"
             TextColor="White"
             BackgroundColor="Green"/>
+
+        <Button
+            x:Name="customerlistButton"
+            Text="Customer List"
+            TextColor="White"
+            BackgroundColor="Green"/>
     </StackLayout>
                 
 </ContentPage>

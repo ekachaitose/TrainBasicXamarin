@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFirst.CustomerListPage"
+             Title="Customer List"
+             Padding="10">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            x:Name="addButton"
+            Text="Add"
+            Icon="airdrop.png"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout
+        Orientation="Vertical">
+
+        <Entry
+            x:Name="searchEntry"
+            Placeholder="Search name, surname or telephone"/>
+
+
+        <ListView
+            x:Name="listView"
+            VerticalOptions="FillAndExpand"
+            RowHeight="140">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100">
+                                </ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Image
+                                BackgroundColor="Silver"
+                                VerticalOptions="Start"
+                                HeightRequest="130"/>
+                            <Label
+                                Text="Photo"
+                                HorizontalTextAlignment="Center"
+                                VerticalTextAlignment="Center"
+                                VerticalOptions="Start"
+                                HeightRequest="130"/>
+                            <StackLayout
+                                Grid.Column="1"
+                                Margin="5,0,0,0">
+                                
+                                <Label
+                                    Text="{Binding Name,StringFormat='Name:{0}'}"
+                                    TextColor="Blue"
+                                    FontAttributes="Bold"/>
+
+                                <Label
+                                    Text="{Binding Surname,StringFormat='Surname:{0}'}"
+                                    TextColor="Blue"
+                                    FontAttributes="Bold"/>
+
+                                <Label
+                                    Text="{Binding Birthdate,StringFormat='Birthdate:{0:dd/MM/yyyy}'}"/>
+
+                                <Label
+                                    Text="{Binding Email,StringFormat='Email:{0}'}"/>
+
+                                <Label
+                                    Text="{Binding Telephone,StringFormat='Telephone:{0}'}"/>
+
+                            </StackLayout>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+
+</ContentPage>

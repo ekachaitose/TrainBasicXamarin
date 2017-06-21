@@ -22,9 +22,8 @@ namespace XamarinFirst
             contentButton.Clicked += MenuButton_Clicked;
             preferenceButton.Clicked += MenuButton_Clicked;
             customerregisterButton.Clicked += MenuButton_Clicked;
+            customerlistButton.Clicked += MenuButton_Clicked;
         }
-
-
         private void MenuButton_Clicked(object sender, EventArgs e)
         {
             var mp = this.Parent as MasterDetailPage;
@@ -77,6 +76,12 @@ namespace XamarinFirst
             else if (sender == customerregisterButton)
             {
                 var np = new NavigationPage(new CustomerRegisterPage());
+                mp.Detail = np;
+            }
+
+            else if (sender == customerlistButton)
+            {
+                var np = new NavigationPage(new CustomerListPage());
                 mp.Detail = np;
             }
             mp.IsPresented = false;

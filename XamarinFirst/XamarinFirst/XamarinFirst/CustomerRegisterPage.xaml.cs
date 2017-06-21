@@ -20,16 +20,25 @@ namespace XamarinFirst
             childrenStepper.ValueChanged += ChildrenStepper_ValueChanged;
             salarySlider.ValueChanged += SalarySlider_ValueChanged;
             saveButton.Clicked += SaveButton_Clicked;
-
+            cancelButton.Clicked += CancelButton_Clicked;
             var genders = new List<string>();
             genders.Add("Male");
             genders.Add("Female");
             genderPicker.ItemsSource = genders;
         }
 
-      
+       async private void CancelButton_Clicked(object sender, EventArgs e)
+        {
+            var isOk = await DisplayAlert("Confirm", "Do you want to cancel ?", "OK", "Cancel");
+            if (isOk)
+            {
+                var np = this.Parent as NavigationPage;
+                var mp = np.Parent as MasterDetailPage;
+                mp.Detail = new NavigationPage(new CustomerListPage());
+            }
+        }
 
-        private void SaveButton_Clicked(object sender, EventArgs e)
+        async private void SaveButton_Clicked(object sender, EventArgs e)
         {
             var customer = new Customer
             {
@@ -51,8 +60,15 @@ namespace XamarinFirst
             };
 
             var affected = Helpers.DbHelper.Current.CustomerAdd(customer);
-            if (affected > 0) DisplayAlert("Complete", "Register Success", "OK");
-           else DisplayAlert("Warning", "Something wrong", "OK");
+            if (affected > 0)
+            {
+               await DisplayAlert("Complete", "Register Success", "OK");
+                var np = this.Parent as NavigationPage;
+                var mp = np.Parent as MasterDetailPage;
+                mp.Detail = new NavigationPage(new CustomerListPage());
+
+            }
+            else await DisplayAlert("Warning", "Something wrong", "OK");
         }
 
         void ChildrenStepper_ValueChanged(object sender, ValueChangedEventArgs e)
