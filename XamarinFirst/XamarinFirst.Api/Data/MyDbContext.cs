@@ -11,7 +11,7 @@ namespace XamarinFirst.Api.Data
     {
         public DbSet<Customer> Customers { get; set; }
 
-        public MyDbContext(DbContextOptions<MyDbContext> options)
+        public MyDbContext(DbContextOptions<MyDbContext> options) : base(options)
         {
 
 
