@@ -95,7 +95,7 @@ namespace XamarinFirst.Helpers
                      .OrderBy(c => c.Name)
                      .ToList();
         }
-        public async void FeedData()
+        public async Task FeedData()
         {
             var client = new HttpClient();
             var json = await client.GetStringAsync("http://codemobile.azurewebsites.net/api/Customers");

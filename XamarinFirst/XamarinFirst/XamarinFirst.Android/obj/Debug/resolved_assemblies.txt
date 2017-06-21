@@ -64,3 +64,4 @@ E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Androi
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\android\assets\Mono.CSharp.dll
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\android\assets\Mono.Security.dll
 E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\android\assets\System.Diagnostics.Tools.dll
+E:\TrainXamarin\trainXamarin062017\XamarinFirst\XamarinFirst\XamarinFirst.Android\obj\Debug\android\assets\System.Net.Primitives.dll

@@ -21,7 +21,8 @@
         <ListView
             x:Name="listView"
             VerticalOptions="FillAndExpand"
-            RowHeight="140">
+            RowHeight="140"
+            IsPullToRefreshEnabled="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

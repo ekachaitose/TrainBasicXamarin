@@ -17,13 +17,29 @@ namespace XamarinFirst
             InitializeComponent();
             addButton.Clicked += AddButton_Clicked;
             searchEntry.TextChanged += SearchEntry_TextChanged;
-            listView.ItemsSource = Helpers.DbHelper.Current.CustomerGet();
+            listView.Refreshing += ListView_Refreshing;
+            FeedData();
+        }
+
+        private  void ListView_Refreshing(object sender, EventArgs e)
+        {
+
+            FeedData();
+        }
+
+        async void FeedData()
+        {
+            listView.IsRefreshing = true;
+           await Helpers.DbHelper.Current.FeedData();  //เก็บ data ลง db SQLite
+            listView.ItemsSource = Helpers.DbHelper.Current.CustomerGet(); //ดึง data จาก db SQLite
+            listView.IsRefreshing = false;
         }
 
         private void SearchEntry_TextChanged(object sender, TextChangedEventArgs e)
         {
             listView.ItemsSource = Helpers.DbHelper.Current.CustomerSearch(searchEntry.Text);
         }
+
 
         private void AddButton_Clicked(object sender, EventArgs e)
         {

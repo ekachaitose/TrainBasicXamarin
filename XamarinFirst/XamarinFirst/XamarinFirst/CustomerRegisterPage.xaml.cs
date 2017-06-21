@@ -58,6 +58,7 @@ namespace XamarinFirst
                 Password = passwordEntry.Text
 
             };
+            //โชว์ อินดิเคเตอร์ เพื่อป้องกันการกดซ้ำ
             saveButton.IsEnabled = false;
             saveIndicator.IsVisible = true;
             var id = await Helpers.DbHelper.Current.CustomerAdd(customer);
